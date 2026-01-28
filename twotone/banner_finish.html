@@ -9,6 +9,21 @@
         .container { max-width: 1200px; margin: 0 auto; }
         header { margin-bottom: 30px; border-bottom: 2px solid #333; padding-bottom: 10px; }
 
+        /* 네비게이션 버튼 */
+        .nav-box { margin-bottom: 30px; text-align: left; }
+        .nav-link { 
+            display: inline-block;
+            text-decoration: none; 
+            color: #555; 
+            padding: 8px 20px; 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .nav-link:hover { background: #333; color: #fff; border-color: #333; }
+
         /* 그리드 설정 */
         .grid-wrapper {
             display: grid;
@@ -74,6 +89,10 @@
 <body>
 
 <div class="container">
+    <div class="nav-box">
+        <a href="../" class="nav-link">← 처음으로 돌아가기</a>
+    </div>
+
     <header><h2>현수막 후가공 종류</h2></header>
 
     <div class="grid-wrapper">
@@ -138,6 +157,10 @@
             <img src="./현수막후가공/일반나무+로프-원단폭 90cm이하.jpg">
             <div class="item-info">일반나무 + 로프</div>
         </div>
+    </div>
+
+    <div class="nav-box" style="text-align: center; margin-top: 50px;">
+        <a href="../" class="nav-link">처음으로 돌아가기</a>
     </div>
 </div>
 
