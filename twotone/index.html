@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twotone - 용지 샘플 안내</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: #f7f7f7; 
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        /* 네비게이션 버튼 */
+        .nav-box { margin-bottom: 30px; text-align: left; }
+        .nav-link { 
+            display: inline-block;
+            text-decoration: none; 
+            color: #555; 
+            padding: 8px 20px; 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .nav-link:hover { background: #333; color: #fff; border-color: #333; }
+
+        /* 섹션 제목 */
+        h2 { 
+            font-size: 22px; 
+            margin: 40px 0 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid #333; 
+            display: flex;
+            align-items: center;
+        }
+        h2::before { content: ""; width: 4px; height: 20px; background: #333; margin-right: 10px; }
+
+        /* 그리드 레이아웃 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* 카드 스타일 */
+        .item-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .img-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #eee;
+        }
+        .item-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 이미지 찌그러짐 방지 */
+            transition: transform 0.5s;
+        }
+        .item-card:hover img { transform: scale(1.1); }
+
+        .item-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .item-info strong { font-size: 15px; color: #222; }
+
+        /* 반응형 조절 */
+        @media (max-width: 800px) {
+            body { padding: 15px; }
+            .grid-container { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+            .img-wrapper { height: 140px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-box">
+        <a href="../" class="nav-link">← 처음으로 돌아가기</a>
+    </div>
+
+    <!-- 국산지 -->
+    <h2>국산지</h2>
+    <div class="grid-container">
+        <div class="item-card" onclick="window.open('./국산지/스노우지-250g.jpg')">
+            <div class="img-wrapper"><img src="./국산지/스노우지-250g.jpg" alt="스노우지"></div>
+            <div class="item-info"><strong>스노우지 (250g)</strong></div>
+        </div>
+    </div>
+
+    <!-- 수입지 -->
+    <h2>수입지</h2>
+    <div class="grid-container">
+        <div class="item-card" onclick="window.open('./수입지/그레이스-209g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/그레이스-209g.jpg"></div>
+            <div class="item-info"><strong>그레이스 (209g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/누브지-240g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/누브지-240g.jpg"></div>
+            <div class="item-info"><strong>누브지 (240g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/띤또레또-200g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/띤또레또-200g.jpg"></div>
+            <div class="item-info"><strong>띤또레또 (200g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/랑데뷰내추럴-240g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/랑데뷰내추럴-240g.jpg"></div>
+            <div class="item-info"><strong>랑데뷰내추럴 (240g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/머쉬멜로우-209g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/머쉬멜로우-209g.jpg"></div>
+            <div class="item-info"><strong>머쉬멜로우 (209g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/메탈금-250g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/메탈금-250g.jpg"></div>
+            <div class="item-info"><strong>메탈금 (250g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/메탈은-250g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/메탈은-250g.jpg"></div>
+            <div class="item-info"><strong>메탈은 (250g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/몽블랑-240g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/몽블랑-240g.jpg"></div>
+            <div class="item-info"><strong>몽블랑 (240g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/샤인스페셜-200.jpg')">
+            <div class="img-wrapper"><img src="./수입지/샤인스페셜-200.jpg"></div>
+            <div class="item-info"><strong>샤인스페셜 (200g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/스코틀랜드-백색-220.jpg')">
+            <div class="img-wrapper"><img src="./수입지/스코틀랜드-백색-220.jpg"></div>
+            <div class="item-info"><strong>스코틀랜드 (220g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/스타드림-240g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/스타드림-240g.jpg"></div>
+            <div class="item-info"><strong>스타드림 (240g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/시리오펄골드-300g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/시리오펄골드-300g.jpg"></div>
+            <div class="item-info"><strong>시리오펄골드 (300g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/시리오펄스노우-300g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/시리오펄스노우-300g.jpg"></div>
+            <div class="item-info"><strong>시리오펄스노우 (300g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/시리오펄진주-230g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/시리오펄진주-230g.jpg"></div>
+            <div class="item-info"><strong>시리오펄진주 (230g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/유포지블루-250g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/유포지블루-250g.jpg"></div>
+            <div class="item-info"><strong>유포지블루 (250g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/컨셉-270g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/컨셉-270g.jpg"></div>
+            <div class="item-info"><strong>컨셉 (270g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/쿠폰명함-260g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/쿠폰명함-260g.jpg"></div>
+            <div class="item-info"><strong>쿠폰명함 (260g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/탄트지-200g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/탄트지-200g.jpg"></div>
+            <div class="item-info"><strong>탄트지 (200g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/팝셋-250g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/팝셋-250g.jpg"></div>
+            <div class="item-info"><strong>팝셋 (250g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/휘라레린넨-216g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/휘라레린넨-216g.jpg"></div>
+            <div class="item-info"><strong>휘라레린넨 (216g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./수입지/크라프트-250g.jpg')">
+            <div class="img-wrapper"><img src="./수입지/크라프트-250g.jpg"></div>
+            <div class="item-info"><strong>크라프트 (250g)</strong></div>
+        </div>
+    </div>
+
+    <!-- VIP수입지 -->
+    <h2>VIP수입지</h2>
+    <div class="grid-container">
+        <div class="item-card" onclick="window.open('./VIP수입지/띤또레또-250g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/띤또레또-250g.jpg"></div>
+            <div class="item-info"><strong>띤또레또 (250g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/랑데뷰내츄럴-310g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/랑데뷰내츄럴-310g.jpg"></div>
+            <div class="item-info"><strong>랑데뷰내츄럴 (310g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/아르떼울트라화이트-310g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/아르떼울트라화이트-310g.jpg"></div>
+            <div class="item-info"><strong>아르떼울트라화이트 (310g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/엑스트라린넨-350g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/엑스트라린넨-350g.jpg"></div>
+            <div class="item-info"><strong>엑스트라린넨 (350g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/엑스트라매트-350g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/엑스트라매트-350g.jpg"></div>
+            <div class="item-info"><strong>엑스트라매트 (350g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/엑스트라퓨어-350g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/엑스트라퓨어-350g.jpg"></div>
+            <div class="item-info"><strong>엑스트라퓨어 (350g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./VIP수입지/엑스트라화이트에그쉘-400g.jpg')">
+            <div class="img-wrapper"><img src="./VIP수입지/엑스트라화이트에그쉘-400g.jpg"></div>
+            <div class="item-info"><strong>엑스트라화이트에그쉘 (400g)</strong></div>
+        </div>
+    </div>
+
+    <!-- 카드명함 -->
+    <h2>카드명함</h2>
+    <div class="grid-container">
+        <div class="item-card" onclick="window.open('./카드명함/골드.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/골드.jpg"></div>
+            <div class="item-info"><strong>골드</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/골드플러스.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/골드플러스.jpg"></div>
+            <div class="item-info"><strong>골드플러스</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/누드.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/누드.jpg"></div>
+            <div class="item-info"><strong>누드</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/누드플러스.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/누드플러스.jpg"></div>
+            <div class="item-info"><strong>누드플러스</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/실버.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/실버.jpg"></div>
+            <div class="item-info"><strong>실버</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/실버플러스.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/실버플러스.jpg"></div>
+            <div class="item-info"><strong>실버플러스</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/카드-금펄.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/카드-금펄.jpg"></div>
+            <div class="item-info"><strong>금펄</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/카드-금펄플러스.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/카드-금펄플러스.jpg"></div>
+            <div class="item-info"><strong>금펄플러스</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/카드-은펄.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/카드-은펄.jpg"></div>
+            <div class="item-info"><strong>은펄</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/카드-은펄플러스.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/카드-은펄플러스.jpg"></div>
+            <div class="item-info"><strong>은펄플러스</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./카드명함/화이트.jpg')">
+            <div class="img-wrapper"><img src="./카드명함/화이트.jpg"></div>
+            <div class="item-info"><strong>화이트</strong></div>
+        </div>
+    </div>
+
+    <!-- 기타 -->
+    <h2>기타</h2>
+    <div class="grid-container">
+        <div class="item-card" onclick="window.open('./기타/멤버쉽카드.png')">
+            <div class="img-wrapper"><img src="./기타/멤버쉽카드.png"></div>
+            <div class="item-info"><strong>멤버쉽카드</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./기타/스노우지-300g.jpg')">
+            <div class="img-wrapper"><img src="./기타/스노우지-300g.jpg"></div>
+            <div class="item-info"><strong>스노우지 (300g)</strong></div>
+        </div>
+        <div class="item-card" onclick="window.open('./기타/아트지-300g.jpg')">
+            <div class="img-wrapper"><img src="./기타/아트지-300g.jpg"></div>
+            <div class="item-info"><strong>아트지 (300g)</strong></div>
+        </div>
+    </div>
+
+    <div class="nav-box" style="text-align: center; margin-top: 50px;">
+        <a href="../" class="nav-link">처음으로 돌아가기</a>
+    </div>
+</div>
+
+</body>
+</html>
